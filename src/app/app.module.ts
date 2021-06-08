@@ -8,6 +8,10 @@ import { AppComponent } from './app.component';
 import { AddBusinessComponent } from './components/add-business/add-business.component';
 import { BusinessDetailsComponent } from './components/business-details/business-details.component';
 import { BusinessComponent } from './components/business/business.component';
+import { NeighborhoodComponent } from './components/neighborhood/neighborhood.component';
+import { NeighborhoodAddComponent } from './components/neighborhood-add/neighborhood-add.component';
+import { NeighborhoodDetailsComponent } from './components/neighborhood-details/neighborhood-details.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +19,10 @@ import { BusinessComponent } from './components/business/business.component';
     AddBusinessComponent,
     BusinessDetailsComponent,
     BusinessComponent,
+    NeighborhoodComponent,
+    NeighborhoodAddComponent,
+    NeighborhoodDetailsComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
