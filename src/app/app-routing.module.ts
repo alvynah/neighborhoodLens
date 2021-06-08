@@ -6,6 +6,9 @@ import { BusinessDetailsComponent } from './components/business-details/business
 import { NeighborhoodComponent } from './components/neighborhood/neighborhood.component';
 import { NeighborhoodAddComponent } from './components/neighborhood-add/neighborhood-add.component';
 import { NeighborhoodDetailsComponent } from './components/neighborhood-details/neighborhood-details.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { PostAddComponent } from './components/post-add/post-add.component';
+import { PostDetailsComponent } from './components/post-details/post-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'business', pathMatch: 'full' },
@@ -15,6 +18,9 @@ const routes: Routes = [
   { path: 'neighborhood', component: NeighborhoodComponent },
   { path: 'addneighborhood', component: NeighborhoodAddComponent },
   { path: 'neighborhood/:id', component: NeighborhoodDetailsComponent },
+  { path: 'post', component: PostsComponent },
+  { path: 'addPost', component: PostAddComponent },
+  { path: 'post/:id', component: PostDetailsComponent },
 
 ];
 

@@ -1,0 +1,48 @@
+<div class="container mt-3 details">
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div *ngIf="currentPost.id" class="edit-form">
+                <h4>Update Post</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="titlePost">Title</label>
+                        <input class="form-control" id="titlePost" required [(ngModel)]="currentPost.title" name="titlePost" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="post">Post</label>
+                        <input class="form-control" id="post" required [(ngModel)]="currentPost.post" name="post" />
+                    </div>
+                    <div class="form-group">
+                        <label for="user">User</label>
+                        <input class="form-control" id="user" required [(ngModel)]="currentPost.user" name="user" />
+                    </div>
+                    <div class="form-group">
+                        <label for="hood">Hood</label>
+                        <input class="form-control" id="hood" required [(ngModel)]="currentPost.hood" name="hood" />
+                    </div>
+                </form>
+
+
+
+                <button class="btn btn-outline-danger  mr-2" (click)="deletePost()">
+                    Delete
+                </button>
+
+                <button type="submit" class="btn btn-outline-success mb-2" (click)="updatePost()">
+                    Update
+                </button>
+                <p>{{ message }}</p>
+            </div>
+
+            <div *ngIf="!currentPost.id">
+                <br />
+                <p>Cannot access this Post...</p>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>

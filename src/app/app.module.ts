@@ -12,6 +12,9 @@ import { NeighborhoodComponent } from './components/neighborhood/neighborhood.co
 import { NeighborhoodAddComponent } from './components/neighborhood-add/neighborhood-add.component';
 import { NeighborhoodDetailsComponent } from './components/neighborhood-details/neighborhood-details.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { PostAddComponent } from './components/post-add/post-add.component';
+import { PostDetailsComponent } from './components/post-details/post-details.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     NeighborhoodAddComponent,
     NeighborhoodDetailsComponent,
     NavbarComponent,
+    PostsComponent,
+    PostAddComponent,
+    PostDetailsComponent,
   ],
   imports: [
     BrowserModule,

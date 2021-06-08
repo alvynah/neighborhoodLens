@@ -1,0 +1,43 @@
+<div class="container mt-3 details">
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h4 style="font-style: italic;">Add Post</h4>
+
+            <div class="submit-form">
+                <div *ngIf="!submitted">
+                    <div class="form-group">
+                        <label for="titlePost">Title</label>
+                        <input type="text" class="form-control" id="titlePost" required [(ngModel)]="posts.title" name="titlePost" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="post">Post</label>
+                        <input type="text" class="form-control" id="post" required [(ngModel)]="posts.post" name="post" />
+                    </div>
+                    <div class="form-group">
+                        <label for="user">User</label>
+                        <input type="text" class="form-control" id="user" required [(ngModel)]="posts.user" name="user" />
+                    </div>
+                    <div class="form-group">
+                        <label for="hood">Hood</label>
+                        <input type="text" class="form-control" id="hood" required [(ngModel)]="posts.hood" name="hood" />
+                    </div>
+                    <div class="text-center">
+                        <button (click)="savePosts()" class="btn btn-success">Submit</button>
+
+                    </div>
+                </div>
+
+                <div *ngIf="submitted">
+                    <h4>Posts was submitted successfully!</h4>
+                    <button class="btn btn-success" (click)="newPosts()">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
+</div>
