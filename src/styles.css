@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    scroll-behavior: smooth;
+    background-image: url(./assets/wallpaper.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'display';
+    color: white;
+}
+
+.details {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 3%;
+    padding-bottom: 5%;
+}
+
+.list-group-item {
+    background-color: transparent !important;
+    box-shadow: 0 0 20px 0 grey;
+    margin-bottom: 2%;
+    cursor: pointer;
+    color: white !important;
+}
+
+.list-group-item.active {
+    border-color: chocolate;
+    box-shadow: 0 0 20px 0 chocolate;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.btnEdit {
+    border-color: chocolate;
+    box-shadow: 0 0 20px 0 chocolate;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+form,
+.submit-form {
+    width: 80%;
+    padding: 20px;
+    border-radius: 6px;
+    background: transparent;
+    box-shadow: 0 0 20px 0 grey;
+    margin-bottom: 3%;
+}
+
+.form-control:hover,
+.form-check-label:hover,
+input:hover::placeholder {
+    color: chocolate;
+}
+
+.form-group input:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 6px 0 chocolate;
+    color: chocolate;
+}
+
+.btnSubmit {
+    float: center;
+}
